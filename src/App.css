@@ -22,26 +22,8 @@
   content: "";
 }
 
-.triangle::before {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-width: 20vmin 10vmin;
-  	border-style: solid;
-  	border-color: #282c34 transparent transparent #282c34;
-    content: "";
-}
-
-.triangle::after {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-width: 20vmin 10vmin;
-  border-style: solid;
-  border-color: #282c34 #282c34 transparent transparent;
-  content: "";
+.triangle {
+  clip-path: polygon(50% 0%, 0% 86.6%, 100% 86.6%);
 }
 
 .circle {
