@@ -2,7 +2,7 @@
   "name": "rolling-triangle",
   "version": "0.1.0",
   "private": true,
-  "homepage":".",
+  "homepage": ".",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -28,5 +28,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-file-picker": "0.0.6"
   }
 }

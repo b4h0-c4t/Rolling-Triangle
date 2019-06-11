@@ -16,7 +16,6 @@
   animation: App-logo-spin infinite 5s linear;
   height: 40vmin;
   width: 40vmin;
-  background: url("./img/source.jpg") center/cover no-repeat;
   background-color: #fff;
   overflow: hidden;
   pointer-events: none;
@@ -74,6 +73,16 @@
   outline: none;
   padding: 0;
   appearance: none;
+}
+
+.uploader {
+  position: absolute;
+  bottom: 7.5vh;
+  left: 16px;
+}
+
+.button.uploader {
+  width: calc(100vw - 48px);
 }
 
 @keyframes App-logo-spin {
