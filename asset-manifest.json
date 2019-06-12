@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Rolling-Triangle/static/css/main.9274ffdf.chunk.css",
-    "main.js": "/Rolling-Triangle/static/js/main.ec925bb4.chunk.js",
-    "main.js.map": "/Rolling-Triangle/static/js/main.ec925bb4.chunk.js.map",
+    "main.css": "/Rolling-Triangle/static/css/main.c65d6b01.chunk.css",
+    "main.js": "/Rolling-Triangle/static/js/main.d9ba7f76.chunk.js",
+    "main.js.map": "/Rolling-Triangle/static/js/main.d9ba7f76.chunk.js.map",
     "runtime~main.js": "/Rolling-Triangle/static/js/runtime~main.66a18c21.js",
     "runtime~main.js.map": "/Rolling-Triangle/static/js/runtime~main.66a18c21.js.map",
     "static/js/2.465125ff.chunk.js": "/Rolling-Triangle/static/js/2.465125ff.chunk.js",
     "static/js/2.465125ff.chunk.js.map": "/Rolling-Triangle/static/js/2.465125ff.chunk.js.map",
     "index.html": "/Rolling-Triangle/index.html",
-    "precache-manifest.f60221a4abbd1e828dc611aa7ef66e03.js": "/Rolling-Triangle/precache-manifest.f60221a4abbd1e828dc611aa7ef66e03.js",
+    "precache-manifest.bc1bbd2a28ce80165033bbf4cc415482.js": "/Rolling-Triangle/precache-manifest.bc1bbd2a28ce80165033bbf4cc415482.js",
     "service-worker.js": "/Rolling-Triangle/service-worker.js",
-    "static/css/main.9274ffdf.chunk.css.map": "/Rolling-Triangle/static/css/main.9274ffdf.chunk.css.map"
+    "static/css/main.c65d6b01.chunk.css.map": "/Rolling-Triangle/static/css/main.c65d6b01.chunk.css.map"
   }
 }

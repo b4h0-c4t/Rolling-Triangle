@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Rolling-Triangle/precache-manifest.f60221a4abbd1e828dc611aa7ef66e03.js"
+  "/Rolling-Triangle/precache-manifest.bc1bbd2a28ce80165033bbf4cc415482.js"
 );
 
 self.addEventListener('message', (event) => {
