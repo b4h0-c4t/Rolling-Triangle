@@ -5,6 +5,7 @@ import './App.css';
 function App() {
   const [state, dispatcher] = React.useState(0);
   const [rolling, setRolling] = React.useState(false);
+  const [first, changeFirst] = React.useState(true);
   const [target_image, fileDispatcher] = React.useState(null);
 
   const image_style = {
@@ -16,16 +17,26 @@ function App() {
     fileDispatcher(fuga);
   }
 
+  const handleChange = () => {
+    if (first) {
+      changeFirst(false)
+      setRolling(rolling === false ? true : false)
+    }
+    else {
+      setRolling(rolling === false ? true : false)
+    }
+  }
+
   return (
-    <div className="App">
-      <div className={`image-container ${state === 0 ? 'triangle' : (state === 1 ? '' : 'circle')}`} style={target_image !== null ? image_style : {}} />
+    <div className={`App ${first ? '' : (rolling ? 'fade-in-background' : 'fade-out-background')}`}>
+      <div className={`image-container ${state === 0 ? 'triangle' : (state === 1 ? '' : 'circle')} ${rolling ? 'rotate' : ''}`} style={target_image !== null ? image_style : {}} />
       <div className={"choice-button-wrap"}>
-        <button className={"button choice-button triangle"} onClick={() => dispatcher(0)}>▲</button>
-        <button className={"button choice-button"} onClick={() => dispatcher(1)}>■</button>
-        <button className={"button choice-button circle"} onClick={() => dispatcher(2)}>●</button>
+        <button className={"button choice-button triangle"} onClick={() => dispatcher(0)}></button>
+        <button className={"button choice-button"} onClick={() => dispatcher(1)}></button>
+        <button className={"button choice-button circle"} onClick={() => dispatcher(2)}></button>
       </div>
       <div className="controller">
-        <button className="button" onClick={rolling === false ? true : false}>転がる</button>
+        <button className="button" onClick={handleChange}>転がる</button>
         <button className="button" onClick={() => setRolling(rolling === true ? false : true)}>転がらない</button>
       </div>
       <ImagePicker
