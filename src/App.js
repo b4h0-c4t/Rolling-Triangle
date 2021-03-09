@@ -17,6 +17,11 @@ function App() {
   return (
     <div className="App">
       <div className={`image-container ${state === 0 ? 'triangle' : (state === 1 ? '' : 'circle')}`} style={target_image !== null ? image_style : {}} />
+      <div className={"choice-button-wrap"}>
+        <button className={"button choice-button triangle"} onClick={() => dispatcher(0)}>▲</button>
+        <button className={"button choice-button"} onClick={() => dispatcher(1)}>■</button>
+        <button className={"button choice-button circle"} onClick={() => dispatcher(2)}>●</button>
+      </div>
       <div className="controller">
         <button className="button" onClick={() => dispatcher(state + 1 <= 2 ? state + 1 : state)}>転がる</button>
         <button className="button" onClick={() => dispatcher(state - 1 >= 0 ? state - 1 : state)}>転がらない</button>
