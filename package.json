@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "http://b4h0-c4t.github.io/Rolling-Triangle",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
