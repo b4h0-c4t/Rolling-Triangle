@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
   const [state, dispatcher] = React.useState(0);
+  const [rolling, setRolling] = React.useState(false);
   const [target_image, fileDispatcher] = React.useState(null);
 
   const image_style = {
@@ -14,6 +15,7 @@ function App() {
     console.log(fuga);
     fileDispatcher(fuga);
   }
+
   return (
     <div className="App">
       <div className={`image-container ${state === 0 ? 'triangle' : (state === 1 ? '' : 'circle')}`} style={target_image !== null ? image_style : {}} />
@@ -23,8 +25,8 @@ function App() {
         <button className={"button choice-button circle"} onClick={() => dispatcher(2)}>●</button>
       </div>
       <div className="controller">
-        <button className="button" onClick={() => dispatcher(state + 1 <= 2 ? state + 1 : state)}>転がる</button>
-        <button className="button" onClick={() => dispatcher(state - 1 >= 0 ? state - 1 : state)}>転がらない</button>
+        <button className="button" onClick={rolling === false ? true : false}>転がる</button>
+        <button className="button" onClick={() => setRolling(rolling === true ? false : true)}>転がらない</button>
       </div>
       <ImagePicker
         extensions={['jpg', 'jpeg', 'png']}
